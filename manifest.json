@@ -1,0 +1,15 @@
+{
+  "name": "问董秘",
+  "short_name": "问董秘",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3eaf7c",
+  "icons": [
+    {
+      "src": "/inquire.jpg",
+      "sizes": "120x120",
+      "type": "image/png"
+    }
+  ]
+}
