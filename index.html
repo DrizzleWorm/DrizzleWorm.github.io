@@ -2,25 +2,34 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Hello PWA</title>
-    <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <link rel="manifest" href="manifest.json">
+  <meta charset="UTF-8">
+  <title>Hello PWA</title>
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <link rel="manifest" href="manifest.json">
+  <style>
+    .add-button {
+      position: absolute;
+      top: 1px;
+      left: 1px;
+    }
+  </style>
 </head>
 
 <body>
-    <h3>问董秘，怎么又是你？！</h3>
+  <h3>问董秘，怎么又是你？！</h3>
+  <button class="add-button">Add to home screen</button>
 </body>
 <script>
-    // 检测浏览器是否支持SW
-    if (navigator.serviceWorker != null) {
-        navigator.serviceWorker.register('sw.js')
-            .then(function (registartion) {
-                console.log('支持sw:', registartion.scope)
-            })
-    }
+  // 检测浏览器是否支持SW
+  if (navigator.serviceWorker != null) {
+    navigator.serviceWorker.register('sw.js')
+      .then(function (registartion) {
+        console.log('支持sw:', registartion.scope)
+
+      })
+  }
 </script>
 
 </html>
